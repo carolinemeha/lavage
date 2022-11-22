@@ -1,6 +1,6 @@
 // import styled from '@emotion/styled';
 // import { PasswordInput } from '@mantine/core';
-import { createStyles } from '@mantine/core';
+import { createStyles } from "@mantine/core";
 
 // export const UserContainer = styled.div`
 // label {
@@ -74,54 +74,32 @@ import { createStyles } from '@mantine/core';
 // }
 // `
 export const useStyles = createStyles((theme) => ({
-    wrapper: {
-        // minHeight: 900,
-        backgroundSize: 'cover',
-        backgroundImage:
-          'url(https://images.unsplash.com/photo-1484242857719-4b9144542727?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1280&q=80)',
-      },
+  wrapper: {
+    backgroundSize: "cover",
+    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%236f6868' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E")`,
+    textAlign: "left",
+  },
 
-      form: {
-        borderRight: `1px solid ${
-          theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]
-        }`,
-        minHeight: 900,
-        maxWidth: 450,
-        paddingTop: 80,
-    
-        [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-          maxWidth: '100%',
-        },
-      },
+  form: {
+    minHeight: 900,
+    maxWidth: 450,
+    paddingTop: 80,
 
-      title: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-      },
-    
-      logo: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        width: 120,
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-      },
-    }));
-//   root: {
-//     position: 'relative',
-//   },
+    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      maxWidth: "100%",
+    },
+  },
 
-//   input: {
-//     height: 'auto',
-//     paddingTop: 18,
-//   },
+  title: {
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+  },
 
-//   label: {
-//     position: 'absolute',
-//     pointerEvents: 'none',
-//     fontSize: theme.fontSizes.xs,
-//     paddingLeft: theme.spacing.sm,
-//     paddingTop: theme.spacing.sm / 2,
-//     zIndex: 1,
-//   },
-
+  logo: {
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
+    width: 120,
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+}));
